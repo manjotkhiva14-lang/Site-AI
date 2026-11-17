@@ -1,0 +1,12 @@
+{
+  "name": "Khiva's Furniture ",
+  "category": "Furniture",
+  "phone": "9872236323",
+  "address": "Main Road, Faridkot",
+  "hours": ["Mon-Sat: 7:00-19:00", "Sun: closed"],
+  "services": [
+    {"name": "Ready made furniture"},
+    {"name": "Make furniture item as your desired design ", "price":1299},
+    {"name": "Custom orders"}
+  ]
+}
