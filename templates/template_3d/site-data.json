@@ -1,0 +1,553 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "business": {
+    "name": "The Scholars Hub",
+    "shortName": "SH",
+    "tagline": "Faridkot's Quiet Study Space",
+    "industry": "Silent Study Library & Co-study Space",
+    "city": "Faridkot",
+    "state": "Punjab",
+    "country": "India",
+    "address": "Circular Road, Opp. Civil Hospital, Faridkot, Punjab 151203",
+    "landmark": "Near Bus Stand & Main Market",
+    "phone": "+91 78889 01014",
+    "phoneDisplay": "78889 01014",
+    "phoneTel": "tel:+917888901014",
+    "whatsapp": "+91 78889 01014",
+    "whatsappLink": "https://wa.me/917888901014",
+    "instagram": "@the_scholars_hub_library_fdk",
+    "instagramUrl": "https://instagram.com/the_scholars_hub_library_fdk",
+    "email": "contact@thescholarshub.in",
+    "hours": "Open Daily: 8:00 AM – 9:00 PM",
+    "establishedYear": "2023",
+    "copyright": "The Scholars Hub, Faridkot — Punjab. All rights reserved."
+  },
+  "navigation": [
+    {
+      "name": "Home",
+      "url": "index.html",
+      "id": "home"
+    },
+    {
+      "name": "About",
+      "url": "about.html",
+      "id": "about"
+    },
+    {
+      "name": "Services",
+      "url": "services.html",
+      "id": "services"
+    },
+    {
+      "name": "Gallery",
+      "url": "gallery.html",
+      "id": "gallery"
+    },
+    {
+      "name": "Contact",
+      "url": "contact.html",
+      "id": "contact"
+    }
+  ],
+  "home": {
+    "heroEyebrow": "Faridkot's Quiet Study Space",
+    "heroTitle": "Your seat is<br><em>waiting.</em>",
+    "heroSub": "A silent, AC reading room built for exam preparation. Walk in, sit down, and get the hours in — whatever shift works for you.",
+    "floatingBadges": [
+      "SILENCE",
+      "FOCUS",
+      "RESULT"
+    ],
+    "primaryCtaText": "See shift timings",
+    "primaryCtaUrl": "services.html",
+    "secondaryCtaText": "Call now",
+    "secondaryCtaUrl": "tel:+917888901014",
+    "facilitiesEyebrow": "What you get",
+    "facilitiesTitle": "Everything you need. Nothing you don't."
+  },
+  "about": {
+    "heroEyebrow": "Our Mission & Philosophy",
+    "heroTitle": "Built for serious<br><em>aspirants.</em>",
+    "heroSub": "Exam prep doesn't need distractions. It needs a disciplined sanctuary with zero noise, dependable comfort, and high-energy silence.",
+    "floatingBadges": [
+      "DEDICATION",
+      "DISCIPLINE",
+      "GROWTH"
+    ],
+    "stats": [
+      {
+        "value": "100+",
+        "label": "Dedicated Desks",
+        "desc": "Private cubicles with power and lighting"
+      },
+      {
+        "value": "99.9%",
+        "label": "Power Uptime",
+        "desc": "Dual inverter & DG backup systems"
+      },
+      {
+        "value": "13 hrs",
+        "label": "Daily Operating",
+        "desc": "Open 7 days a week from 8 AM"
+      },
+      {
+        "value": "0 dB",
+        "label": "Strict Silent Rule",
+        "desc": "Zero disturbance policy strictly monitored"
+      }
+    ],
+    "story": [
+      "The Scholars Hub was founded with a singular commitment: giving competitive exam students in Faridkot a premier, distraction-free environment comparable to top metro study hubs.",
+      "Whether you are preparing for UPSC, NEET, JEE, GATE, Banking, or State Civil Services, long study hours require ergonomic support, clean air conditioning, and total peace of mind.",
+      "We took away all the friction points—power cuts, uncomfortable seating, noisy surroundings, and spotty internet—so you can focus 100% on what matters: your revision and your results."
+    ],
+    "pillars": [
+      {
+        "title": "Zero Distraction Culture",
+        "desc": "A strictly enforced no-talking policy inside the main study halls to preserve deep work focus."
+      },
+      {
+        "title": "Ergonomic Long-Hour Comfort",
+        "desc": "High-grade orthopedic chairs, wide desk dimensions, and flicker-free 4000K warm eye-friendly illumination."
+      },
+      {
+        "title": "Community of Achievers",
+        "desc": "Surround yourself with like-minded, disciplined peers whose dedication motivates you every single day."
+      }
+    ]
+  },
+  "services": {
+    "heroEyebrow": "Flexible Study Plans",
+    "heroTitle": "Transparent shifts &<br><em>honest fees.</em>",
+    "heroSub": "Choose a shift that fits your routine. Pay only for the study hours you need with no hidden fees or deposits.",
+    "floatingBadges": [
+      "FLEXIBLE",
+      "FOCUSED",
+      "ALL-INCLUSIVE"
+    ],
+    "catalog": [
+      {
+        "id": "morning",
+        "tab": "Morning Shift",
+        "time": "9 AM – 2 PM",
+        "label": "Half Day Morning",
+        "fee": "₹879",
+        "period": "/mo",
+        "badge": "Early Birds",
+        "features": [
+          "5 Hours dedicated silent seat",
+          "Climate-controlled AC hall",
+          "Uninterrupted power & Wi-Fi",
+          "Free cafeteria access"
+        ]
+      },
+      {
+        "id": "evening",
+        "tab": "Evening Shift",
+        "time": "2 PM – 7 PM",
+        "label": "Half Day Evening",
+        "fee": "₹879",
+        "period": "/mo",
+        "badge": "Afternoon Routine",
+        "features": [
+          "5 Hours evening study access",
+          "Quiet post-college hours",
+          "Personal charging plug",
+          "Clean washrooms & water"
+        ]
+      },
+      {
+        "id": "full-day",
+        "tab": "Full Access",
+        "time": "9 AM – 7 PM",
+        "label": "Full Day Shift",
+        "fee": "₹999",
+        "period": "/mo",
+        "isFull": true,
+        "badge": "Most Popular",
+        "features": [
+          "10 Hours all-day dedicated seat",
+          "Permanent desk reservation",
+          "Personal locker access option",
+          "Priority power & fastest Wi-Fi"
+        ]
+      }
+    ],
+    "amenities": [
+      {
+        "title": "High-Speed Wi-Fi",
+        "desc": "Commercial optical fiber connection for smooth streaming of lectures and online test series."
+      },
+      {
+        "title": "Power Backup",
+        "desc": "Instant dual-inverter and generator backup ensuring zero downtime during power cuts."
+      },
+      {
+        "title": "Ergonomic Chairs",
+        "desc": "Orthopedic cushioned mesh chairs with optimal lumbar support for 8+ hour study sessions."
+      },
+      {
+        "title": "Personal Switchboards",
+        "desc": "Dedicated individual 3-pin power socket at every desk for your laptop and mobile."
+      },
+      {
+        "title": "RO Mineral Water",
+        "desc": "Hygienic multi-stage purified drinking water station with temperature control."
+      },
+      {
+        "title": "Dedicated Cafeteria",
+        "desc": "Clean separate lounge area to unpack lunch or take tea breaks without disturbing others."
+      },
+      {
+        "title": "Clean Washrooms",
+        "desc": "Regularly sanitized and maintained washrooms with continuous water supply."
+      },
+      {
+        "title": "CCTV & Security",
+        "desc": "24/7 round-the-clock surveillance for safe storage of study material and personal belongings."
+      }
+    ]
+  },
+  "gallery": {
+    "heroEyebrow": "Virtual Tour & Atmosphere",
+    "heroTitle": "See where you<br><em>will study.</em>",
+    "heroSub": "Clean lines, warm lighting, ergonomic workstations, and an uninterrupted silent atmosphere.",
+    "floatingBadges": [
+      "DESKS",
+      "CABINS",
+      "LOUNGE"
+    ],
+    "categories": [
+      "All",
+      "Study Hall",
+      "Workstations",
+      "Facilities"
+    ],
+    "items": [
+      {
+        "id": 1,
+        "category": "Study Hall",
+        "title": "Air-Conditioned Reading Hall",
+        "desc": "Spacious hall layout with wide aisles, sound-dampening partitions, and climate control.",
+        "tag": "Main Hall"
+      },
+      {
+        "id": 2,
+        "category": "Workstations",
+        "title": "Ergonomic Individual Cubicles",
+        "desc": "Wide wooden desks with private partition dividers and personal plug sockets.",
+        "tag": "Desks"
+      },
+      {
+        "id": 3,
+        "category": "Facilities",
+        "title": "Continuous Power Backup Room",
+        "desc": "Heavy-duty inverter setup and generator standby ensuring 0 seconds interruption.",
+        "tag": "Power"
+      },
+      {
+        "id": 4,
+        "category": "Facilities",
+        "title": "Clean Cafeteria & Break Room",
+        "desc": "Separated dining space where members can enjoy snacks or lunch without disturbing the hall.",
+        "tag": "Cafeteria"
+      },
+      {
+        "id": 5,
+        "category": "Study Hall",
+        "title": "Warm Anti-Glare Illumination",
+        "desc": "Balanced 4000K study lighting designed to reduce eye fatigue during late revisions.",
+        "tag": "Lighting"
+      },
+      {
+        "id": 6,
+        "category": "Facilities",
+        "title": "Hygienic Washrooms & Lockers",
+        "desc": "Sanitized facilities with dedicated book locker storage for full-day members.",
+        "tag": "Amenities"
+      }
+    ]
+  },
+  "contact": {
+    "heroEyebrow": "Ready When You Are",
+    "heroTitle": "Come see the seat<br><em>before you book it.</em>",
+    "heroSub": "Walk-ins are always welcome. Visit us during office hours or send us a message to check seat availability.",
+    "floatingBadges": [
+      "WALK IN",
+      "WHATSAPP",
+      "RESERVE"
+    ]
+  },
+  "pages": {
+    "about": {
+      "t01": "About Us — The Scholars Hub, Faridkot",
+      "t02": "Reserve a seat",
+      "t03": "<span class=\"editorial-meta-tag\">About The Scholars Hub • Faridkot</span> <span class=\"editorial-meta-pill\">Est. 2023 • Circular Road</span>",
+      "t04": "A quiet sanctuary<br/>engineered for <em>deep work.</em>",
+      "t05": "Founded to eliminate power cuts, domestic interruptions, and ambient noise for Faridkot's serious competitive exam candidates.",
+      "t06": "<span class=\"drop-cap\">P</span>reparing for high-stakes competitive examinations like UPSC, NEET, JEE, Banking, or Punjab Civil Services requires marathon hours of deep, uninterrupted revision. Yet studying at home often means dealing with unpredictable domestic noise, unannounced visitors, household errands, and disruptive summer power cuts that break your concentration.",
+      "t07": "We built The Scholars Hub on Circular Road, Faridkot to provide a professional, uncompromising alternative: an air-conditioned silent library where every detail is optimized for intense cognitive work. Sound-absorbing carpeting, personal high-walled cubicles, stable commercial fiber internet, and full dual-inverter power backup ensure you never lose a minute of your study session.",
+      "t08": "\"In competitive exams, knowledge is half the battle; the other half is the discipline and focus of your study environment.\"",
+      "t09": "— The Scholars Hub Founding Principle",
+      "t10": "When you enter our study hall, you are surrounded by fellow aspirants working toward their own ambitions. There is no conversation, no mobile chatter, and no distraction — only the quiet, energizing hum of collective dedication.",
+      "t11": "<span class=\"blueprint-label\">Hall Architecture</span> <span class=\"blueprint-label\" style=\"color:var(--muted)\">Acoustic Layout</span>",
+      "t12": "Dedicated Desks",
+      "t13": "Equipped with 3-pin power & study cubicles",
+      "t14": "Power Uptime",
+      "t15": "Dual inverter & generator standby systems",
+      "t16": "13 hrs",
+      "t17": "Daily Operating",
+      "t18": "Open 7 days a week: 8:00 AM – 9:00 PM",
+      "t19": "0 dB",
+      "t20": "Strict Silent Rule",
+      "t21": "Monitored zero-disturbance policy",
+      "t22": "Guiding Standards",
+      "t23": "The three pillars of our space.",
+      "t24": "01 / DISCIPLINE",
+      "t25": "Zero-Distraction Culture",
+      "t26": "A strictly monitored no-talking policy inside the study halls ensures your concentration remains unbroken through morning, evening, or all-day study shifts.",
+      "t27": "02 / ERGONOMICS",
+      "t28": "Physical Comfort for Long Hours",
+      "t29": "Breathable orthopedic mesh chairs with adjustable lumbar support, paired with non-flicker 4000K lighting designed specifically to avoid eye fatigue and spinal strain.",
+      "t30": "03 / MOMENTUM",
+      "t31": "Community of Achievers",
+      "t32": "Surround yourself with disciplined candidates preparing for civil services, medicine, engineering, and banking whose consistent routine inspires you every single day.",
+      "t33": "Library Conduct Charter",
+      "t34": "<strong>Silent Mode at All Times:</strong> Mobile phones must be set to silent or flight mode upon entering the premises. Calls must be attended in the outer lobby.",
+      "t35": "<strong>Headphone Discipline:</strong> Audio from lecture videos, tests, and music must be kept at a volume that does not leak to neighboring desks.",
+      "t36": "<strong>Cafeteria-Only Dining:</strong> Meals, snacks, and aromatic beverages must be consumed exclusively in the separated cafeteria break room.",
+      "t37": "<strong>Mutual Respect &amp; Quiet Movement:</strong> Please walk quietly, avoid scraping chairs, and respect the deep work focus of fellow scholars.",
+      "t38": "About Us",
+      "t39": "Services & Shifts",
+      "t40": "Photo Gallery",
+      "t41": "Contact & Visit",
+      "t42": "Morning Shift: 9 AM – 2 PM",
+      "t43": "Evening Shift: 2 PM – 7 PM",
+      "t44": "Full Access: 9 AM – 7 PM",
+      "t45": "Chat on WhatsApp →",
+      "t46": "Individual private cubicles with partition dividers",
+      "t47": "4000K anti-glare, flicker-free ceiling illumination",
+      "t48": "Instant dual-inverter + generator automatic transfer",
+      "t49": "Dedicated soundproofed cafeteria lounge",
+      "meta": "Learn about The Scholars Hub, Faridkot's premier silent study library created for serious exam aspirants."
+    },
+    "contact": {
+      "t01": "Contact & Reserve — The Scholars Hub, Faridkot",
+      "t02": "Reserve a seat",
+      "t03": "Reserve Your Seat",
+      "t04": "Submit your preferred shift and target joining date. We verify desk availability and confirm on WhatsApp within minutes.",
+      "t05": "Full Name *",
+      "t06": "Phone Number (WhatsApp) *",
+      "t07": "Preferred Shift *",
+      "t08": "Morning Shift (9 AM – 2 PM) — ₹879/mo",
+      "t09": "Evening Shift (2 PM – 7 PM) — ₹879/mo",
+      "t10": "Full Day Access (9 AM – 7 PM) — ₹999/mo",
+      "t11": "Target Joining Date",
+      "t12": "Target Exam / Goal",
+      "t13": "Special Requirements / Notes",
+      "t14": "Submit Seat Request",
+      "t15": "Library Location",
+      "t16": "Physical Address",
+      "t17": "<span class=\"info-title\">Landmark &amp; Commute</span> <span class=\"info-value\"> Located right across Civil Hospital on Circular Road. 5 minutes from the Bus Stand and Main Market. Parking available. </span>",
+      "t18": "Hours & Walk-Ins",
+      "t19": "Daily Operating Hours",
+      "t20": "<span class=\"info-title\">Walk-In Visitor Policy</span> <span class=\"info-value\"> No prior appointment required. Walk directly into our reception desk anytime between 8 AM and 9 PM for a quick 5-minute hall tour and chair test. </span>",
+      "t21": "About Us",
+      "t22": "Services & Shifts",
+      "t23": "Photo Gallery",
+      "t24": "Contact & Visit",
+      "t25": "Morning Shift: 9 AM – 2 PM",
+      "t26": "Evening Shift: 2 PM – 7 PM",
+      "t27": "Full Access: 9 AM – 7 PM",
+      "t28": "Chat on WhatsApp →",
+      "meta": "Contact The Scholars Hub library in Faridkot. Book your study seat, inquire about shifts, or visit us on Circular Road."
+    },
+    "gallery": {
+      "t01": "Photo Gallery — The Scholars Hub, Faridkot",
+      "t02": "Reserve a seat",
+      "t03": "All Views",
+      "t04": "Study Hall",
+      "t05": "Main Reading Hall",
+      "t06": "Air-Conditioned Reading Hall",
+      "t07": "Expansive silent study hall with wide central aisles, sound-dampening flooring, and dual climate-control units.",
+      "t08": "Click to inspect details",
+      "t09": "Individual Ergonomic Cubicles",
+      "t10": "Custom high-walled wooden desks offering complete privacy from peripheral movements, paired with breathable lumbar-support chairs and personal switchboards.",
+      "t11": "Power Setup",
+      "t12": "Continuous Power Backup",
+      "t13": "Instant dual-inverter system backed by a generator standby to eliminate dark hours during city outages.",
+      "t14": "Cafeteria Lounge",
+      "t15": "Clean Cafeteria & Break Lounge",
+      "t16": "Separated dining area where members can unpack lunch, have coffee, and relax without disturbing the quiet zone.",
+      "t17": "Anti-Glare Lighting",
+      "t18": "Warm Anti-Glare 4000K Lighting",
+      "t19": "Balanced, diffuse study illumination engineered specifically to eliminate shadows and prevent optical fatigue during late evening revisions.",
+      "t20": "Storage & Hygiene",
+      "t21": "Hygienic Washrooms & Lockers",
+      "t22": "Continually sanitized restrooms and dedicated book locker units for Full Access members to store heavy reference books.",
+      "t23": "Facility View",
+      "t24": "Detailed description of the library space and setup.",
+      "t25": "Schedule an In-Person Visit",
+      "t26": "About Us",
+      "t27": "Services & Shifts",
+      "t28": "Photo Gallery",
+      "t29": "Contact & Visit",
+      "t30": "Morning Shift: 9 AM – 2 PM",
+      "t31": "Evening Shift: 2 PM – 7 PM",
+      "t32": "Full Access: 9 AM – 7 PM",
+      "t33": "Chat on WhatsApp →",
+      "meta": "Explore virtual photos and tour the quiet study environment, ergonomic workstations, and facilities at The Scholars Hub, Faridkot."
+    },
+    "index": {
+      "t01": "The Scholars Hub — Silent Study Space, Faridkot",
+      "t02": "Reserve a seat",
+      "t03": "AC Environment",
+      "t04": "Climate-controlled hall, all year round.",
+      "t05": "Power Backup",
+      "t06": "Uninterrupted supply — no dark rooms mid-revision.",
+      "t07": "Comfort Seating",
+      "t08": "Ergonomic chairs built for long study sessions.",
+      "t09": "Clean Washrooms",
+      "t10": "Maintained and accessible, no compromises.",
+      "t11": "Step out for lunch without losing your seat.",
+      "t12": "Silent Zone",
+      "t13": "A no-noise policy, strictly followed.",
+      "t14": "Pick your shift",
+      "t15": "Timings & Fee",
+      "t16": "Three shifts, priced by the hours you actually use.",
+      "t17": "9<small>AM</small>&nbsp;–&nbsp;2<small>PM</small>",
+      "t18": "Half Day",
+      "t19": "₹879<small>/mo</small>",
+      "t20": "Reserve Morning",
+      "t21": "2<small>PM</small>&nbsp;–&nbsp;7<small>PM</small>",
+      "t22": "Reserve Evening",
+      "t23": "Full Access",
+      "t24": "9<small>AM</small>&nbsp;–&nbsp;7<small>PM</small>",
+      "t25": "Full Day",
+      "t26": "₹999<small>/mo</small>",
+      "t27": "Reserve Full Day",
+      "t28": "Explore all shifts & amenities →",
+      "t29": "Quiet Dedication",
+      "t30": "Engineered for long, uninterrupted hours.",
+      "t31": "Discover our study philosophy, daily conduct guidelines, and why hundreds of aspirants choose The Scholars Hub.",
+      "t32": "Learn more about us",
+      "t33": "Take a virtual tour",
+      "t34": "About Us",
+      "t35": "Services & Shifts",
+      "t36": "Photo Gallery",
+      "t37": "Contact & Visit",
+      "t38": "Morning Shift: 9 AM – 2 PM",
+      "t39": "Evening Shift: 2 PM – 7 PM",
+      "t40": "Full Access: 9 AM – 7 PM",
+      "t41": "Chat on WhatsApp →",
+      "t42": "Call now",
+      "meta": "The Scholars Hub is Faridkot's silent study library. AC seating, power backup, cafeteria and washrooms. Book your shift today."
+    },
+    "services": {
+      "t01": "Services & Shifts — The Scholars Hub, Faridkot",
+      "t02": "Reserve a seat",
+      "t03": "<span class=\"schedule-pill\">Morning: 9 AM – 2 PM (₹879/mo)</span> <span class=\"schedule-pill\">Evening: 2 PM – 7 PM (₹879/mo)</span> <span class=\"schedule-pill\" style=\"border-color:var(--brass); font-weight:700;\">Full Access: 9 AM – 7 PM (₹999/mo)</span>",
+      "t04": "Half Day Morning",
+      "t05": "Morning Shift",
+      "t06": "9:00 AM – 2:00 PM",
+      "t07": "<span class=\"service-fee\">₹879</span> <span class=\"service-period\"> / month</span>",
+      "t08": "Best for early risers, syllabus revision routines, and uninterrupted morning self-study.",
+      "t09": "Reserve Morning Shift",
+      "t10": "Half Day Evening",
+      "t11": "Evening Shift",
+      "t12": "2:00 PM – 7:00 PM",
+      "t13": "Best for college students, coaching institute attendees, and post-lecture revision.",
+      "t14": "Reserve Evening Shift",
+      "t15": "Most Popular",
+      "t16": "Full Day Immersion",
+      "t17": "Full Access Shift",
+      "t18": "9:00 AM – 7:00 PM",
+      "t19": "<span class=\"service-fee\">₹999</span> <span class=\"service-period\"> / month</span>",
+      "t20": "Best for full-time competitive aspirants (UPSC, NEET, JEE, GATE, PCS) demanding 10+ hours daily.",
+      "t21": "Reserve Full Day Access",
+      "t22": "Side-By-Side Comparison",
+      "t23": "Compare Membership Inclusions",
+      "t24": "Feature / Privilege",
+      "t25": "Morning (₹879)",
+      "t26": "Evening (₹879)",
+      "t27": "Full Access (₹999)",
+      "t28": "Daily Access Hours",
+      "t29": "5 Hours (9 AM – 2 PM)",
+      "t30": "5 Hours (2 PM – 7 PM)",
+      "t31": "<strong>10 Hours (9 AM – 7 PM)</strong>",
+      "t32": "Dedicated Private Cubicle",
+      "t33": "<strong>Permanent Assigned Desk</strong>",
+      "t34": "Overnight Book Storage",
+      "t35": "<strong>Yes, Desk &amp; Locker</strong>",
+      "t36": "Air Conditioning & Power Backup",
+      "t37": "High-Speed Optical Fiber Wi-Fi",
+      "t38": "<strong>Priority Bandwidth</strong>",
+      "t39": "Cafeteria & RO Water Station",
+      "t40": "Facility Highlights",
+      "t41": "Comprehensive Hall Infrastructure",
+      "t42": "Every amenity is maintained to institutional standards for serious revision.",
+      "t43": "High-Speed Wi-Fi",
+      "t44": "Commercial optical fiber for streaming video lectures and test series without buffering.",
+      "t45": "Continuous Power",
+      "t46": "Instant dual-inverter system plus standby generator ensuring 0 seconds interruption.",
+      "t47": "Ergonomic Chairs",
+      "t48": "Orthopedic cushioned mesh chairs with optimal lumbar support for 8+ hour study sessions.",
+      "t49": "AC Climate Control",
+      "t50": "Balanced temperature regulation in all seasons to prevent fatigue and drowsiness.",
+      "t51": "Personal Switchboards",
+      "t52": "Individual 3-pin power plugs right at your desk for laptop and tablet charging.",
+      "t53": "Clean Cafeteria",
+      "t54": "Separated dining room to eat lunch, enjoy tea, and take breaks without noise entering the hall.",
+      "t55": "Sanitized Washrooms",
+      "t56": "Strictly maintained and hygienic washrooms cleaned multiple times daily.",
+      "t57": "24/7 CCTV Monitoring",
+      "t58": "Full security surveillance ensuring your study materials, laptops, and bags remain safe.",
+      "t59": "Easy Onboarding",
+      "t60": "How to get your seat in 3 steps.",
+      "t61": "Select Your Shift",
+      "t62": "Choose between Morning (9 AM–2 PM), Evening (2 PM–7 PM), or Full Day (9 AM–7 PM) depending on your study target.",
+      "t63": "Book Online or Walk In",
+      "t64": "Send an inquiry through our contact page, WhatsApp, or drop by our library on Circular Road for a quick desk tour.",
+      "t65": "Claim Your Desk",
+      "t66": "Get your assigned private desk, plug in your laptop, and begin your distraction-free preparation journey.",
+      "t67": "Common Queries",
+      "t68": "Frequently Asked Questions",
+      "t69": "Everything you need to know about joining The Scholars Hub.",
+      "t70": "Can I change my shift timings mid-month?",
+      "t71": "Yes! Subject to seat availability in your requested shift, you can easily switch shifts by informing the library desk coordinator.",
+      "t72": "Are personal laptops and study lamps allowed?",
+      "t73": "Absolutely. Every desk is equipped with an individual power outlet specifically for your laptop, tablet, or mobile phone charger.",
+      "t74": "Can I leave my books and notes at my desk?",
+      "t75": "Full Access members have dedicated desks and can leave their study materials overnight. Locker options are also available for valuable belongings.",
+      "t76": "Can I take a trial visit before paying the monthly fee?",
+      "t77": "Yes, you are warmly invited to walk in during visiting hours, inspect the hall atmosphere, check the chair comfort, and test the Wi-Fi before booking your seat.",
+      "t78": "About Us",
+      "t79": "Services & Shifts",
+      "t80": "Photo Gallery",
+      "t81": "Contact & Visit",
+      "t82": "Morning Shift: 9 AM – 2 PM",
+      "t83": "Evening Shift: 2 PM – 7 PM",
+      "t84": "Full Access: 9 AM – 7 PM",
+      "t85": "Chat on WhatsApp →",
+      "t86": "5 Hours daily dedicated study access",
+      "t87": "Climate-controlled AC reading hall",
+      "t88": "Commercial optical fiber Wi-Fi",
+      "t89": "Personal 3-pin power socket at desk",
+      "t90": "Dual inverter continuous backup",
+      "t91": "Free cafeteria lounge & RO water",
+      "t92": "5 Hours quiet evening study access",
+      "t93": "Quiet post-college study environment",
+      "t94": "Personal laptop & mobile charging",
+      "t95": "High-speed optical fiber connection",
+      "t96": "Sanitized washrooms & clean space",
+      "t97": "Cafeteria for tea & snack breaks",
+      "t98": "10 Hours marathon daily study access",
+      "t99": "Dedicated permanent desk assignment",
+      "t100": "Leave books & materials at desk overnight",
+      "t101": "Personal locker access facility",
+      "t102": "Priority high-speed fiber internet",
+      "t103": "Uninterrupted dual-inverter protection",
+      "meta": "Explore study shift plans, timings, monthly fees, and premium amenities at The Scholars Hub, Faridkot."
+    }
+  }
+}

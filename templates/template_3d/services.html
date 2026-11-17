@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title data-bind="pages.services.t01">Services &amp; Shifts — The Scholars Hub, Faridkot</title>
+<meta content="Explore study shift plans, timings, monthly fees, and premium amenities at The Scholars Hub, Faridkot." data-bind-attr="content:pages.services.meta" name="description"/>
+<!-- Fonts: Fraunces for display headline, Inter for body text, JetBrains Mono for timings/fees -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body class="services-page">
+<!-- ============ NAV ============ -->
+<header class="site-header">
+<a class="brand" href="index.html">
+<span class="brand-mark" data-bind="business.shortName">SH</span>
+<span class="brand-name" data-bind="business.name">The Scholars Hub</span>
+</a>
+<nav class="site-nav" id="siteNav">
+<a class="nav-link" href="index.html">Home</a>
+<a class="nav-link" href="about.html">About</a>
+<a class="nav-link active" href="services.html">Services</a>
+<a class="nav-link" href="gallery.html">Gallery</a>
+<a class="nav-link" href="contact.html">Contact</a>
+</nav>
+<div class="nav-right">
+<a class="nav-cta" data-bind="pages.services.t02" href="contact.html">Reserve a seat</a>
+<button aria-expanded="false" aria-label="Toggle navigation" class="nav-toggle" id="navToggle">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+</header>
+<!-- ============ SERVICES MASTHEAD ============ -->
+<section class="services-masthead">
+<div class="services-masthead-inner">
+<p class="eyebrow" data-bind="services.heroEyebrow">Study Shifts &amp; Membership Tiers</p>
+<h1 class="editorial-title" data-bind="services.heroTitle">Choose your study hours.<br/><em>Pay only for what you use.</em></h1>
+<p class="editorial-lead" data-bind="services.heroSub">Fixed transparent monthly pricing with zero admission fees or hidden costs. Morning, Evening, and Full Day slots.</p>
+<div class="services-schedule-bar" data-bind="pages.services.t03">
+<span class="schedule-pill">Morning: 9 AM – 2 PM (₹879/mo)</span>
+<span class="schedule-pill">Evening: 2 PM – 7 PM (₹879/mo)</span>
+<span class="schedule-pill" style="border-color:var(--brass); font-weight:700;">Full Access: 9 AM – 7 PM (₹999/mo)</span>
+</div>
+</div>
+</section>
+<!-- ============ DEDICATED SEPARATED SERVICE CARDS ============ -->
+<section class="services-plans-section">
+<div class="services-plans-inner">
+<div class="services-grid">
+<!-- Morning Plan -->
+<div class="service-plan-card">
+<div class="service-plan-header">
+<span class="service-shift-label" data-bind="pages.services.t04">Half Day Morning</span>
+<h3 data-bind="pages.services.t05">Morning Shift</h3>
+<span class="service-time-badge" data-bind="pages.services.t06">9:00 AM – 2:00 PM</span>
+</div>
+<div class="service-plan-price" data-bind="pages.services.t07">
+<span class="service-fee">₹879</span>
+<span class="service-period"> / month</span>
+</div>
+<p class="service-plan-desc" data-bind="pages.services.t08">Best for early risers, syllabus revision routines, and uninterrupted morning self-study.</p>
+<ul class="service-features-list">
+<li><svg viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5"></path></svg> <span data-bind="pages.services.t86">5 Hours daily dedicated study access</span></li>
+<li><svg viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5"></path></svg> <span data-bind="pages.services.t87">Climate-controlled AC reading hall</span></li>
+<li><svg viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5"></path></svg> <span data-bind="pages.services.t88">Commercial optical fiber Wi-Fi</span></li>
+<li><svg viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5"></path></svg> <span data-bind="pages.services.t89">Personal 3-pin power socket at desk</span></li>
+<li><svg viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5"></path></svg> <span data-bind="pages.services.t90">Dual inverter continuous backup</span></li>
+<li><svg viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5"></path></svg> <span data-bind="pages.services.t91">Free cafeteria lounge &amp; RO water</span></li>
+</ul>
+<a class="service-btn" data-bind="pages.services.t09" href="contact.html?shift=Morning">Reserve Morning Shift</a>
+</div>
+<!-- Evening Plan -->
+<div class="service-plan-card">
+<div class="service-plan-header">
+<span class="service-shift-label" data-bind="pages.services.t10">Half Day Evening</span>
+<h3 data-bind="pages.services.t11">Evening Shift</h3>
+<span class="service-time-badge" data-bind="pages.services.t12">2:00 PM – 7:00 PM</span>
+</div>
+<div class="service-plan-price" data-bind="pages.services.t07">
+<span class="service-fee">₹879</span>
+<span class="service-period"> / month</span>
+</div>
+<p class="service-plan-desc" data-bind="pages.services.t13">Best for college students, coaching institute attendees, and post-lecture revision.</p>
+<ul class="service-features-list">
+<li><svg viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5"></path></svg> <span data-bind="pages.services.t92">5 Hours quiet evening study access</span></li>
+<li><svg viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5"></path></svg> <span data-bind="pages.services.t93">Quiet post-college study environment</span></li>
+<li><svg viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5"></path></svg> <span data-bind="pages.services.t94">Personal laptop &amp; mobile charging</span></li>
+<li><svg viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5"></path></svg> <span data-bind="pages.services.t95">High-speed optical fiber connection</span></li>
+<li><svg viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5"></path></svg> <span data-bind="pages.services.t96">Sanitized washrooms &amp; clean space</span></li>
+<li><svg viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5"></path></svg> <span data-bind="pages.services.t97">Cafeteria for tea &amp; snack breaks</span></li>
+</ul>
+<a class="service-btn" data-bind="pages.services.t14" href="contact.html?shift=Evening">Reserve Evening Shift</a>
+</div>
+<!-- Full Day Plan (Featured) -->
+<div class="service-plan-card featured-plan">
+<span class="featured-badge" data-bind="pages.services.t15">Most Popular</span>
+<div class="service-plan-header">
+<span class="service-shift-label" data-bind="pages.services.t16" style="color:var(--brass); font-weight:700;">Full Day Immersion</span>
+<h3 data-bind="pages.services.t17">Full Access Shift</h3>
+<span class="service-time-badge" data-bind="pages.services.t18">9:00 AM – 7:00 PM</span>
+</div>
+<div class="service-plan-price" data-bind="pages.services.t19">
+<span class="service-fee">₹999</span>
+<span class="service-period"> / month</span>
+</div>
+<p class="service-plan-desc" data-bind="pages.services.t20">Best for full-time competitive aspirants (UPSC, NEET, JEE, GATE, PCS) demanding 10+ hours daily.</p>
+<ul class="service-features-list">
+<li><svg viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5"></path></svg> <span data-bind="pages.services.t98">10 Hours marathon daily study access</span></li>
+<li><svg viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5"></path></svg> <span data-bind="pages.services.t99">Dedicated permanent desk assignment</span></li>
+<li><svg viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5"></path></svg> <span data-bind="pages.services.t100">Leave books &amp; materials at desk overnight</span></li>
+<li><svg viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5"></path></svg> <span data-bind="pages.services.t101">Personal locker access facility</span></li>
+<li><svg viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5"></path></svg> <span data-bind="pages.services.t102">Priority high-speed fiber internet</span></li>
+<li><svg viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5"></path></svg> <span data-bind="pages.services.t103">Uninterrupted dual-inverter protection</span></li>
+</ul>
+<a class="service-btn" data-bind="pages.services.t21" href="contact.html?shift=FullDay">Reserve Full Day Access</a>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ SHIFT COMPARISON MATRIX ============ -->
+<section class="services-matrix-section">
+<div class="services-matrix-inner">
+<p class="eyebrow center" data-bind="pages.services.t22">Side-By-Side Comparison</p>
+<h2 class="section-title center" data-bind="pages.services.t23">Compare Membership Inclusions</h2>
+<div class="matrix-table-wrap">
+<table class="matrix-table">
+<thead>
+<tr>
+<th data-bind="pages.services.t24">Feature / Privilege</th>
+<th data-bind="pages.services.t25">Morning (₹879)</th>
+<th data-bind="pages.services.t26">Evening (₹879)</th>
+<th data-bind="pages.services.t27">Full Access (₹999)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-bind="pages.services.t28">Daily Access Hours</td>
+<td data-bind="pages.services.t29">5 Hours (9 AM – 2 PM)</td>
+<td data-bind="pages.services.t30">5 Hours (2 PM – 7 PM)</td>
+<td data-bind="pages.services.t31"><strong>10 Hours (9 AM – 7 PM)</strong></td>
+</tr>
+<tr>
+<td data-bind="pages.services.t32">Dedicated Private Cubicle</td>
+<td>Included</td>
+<td>Included</td>
+<td data-bind="pages.services.t33"><strong>Permanent Assigned Desk</strong></td>
+</tr>
+<tr>
+<td data-bind="pages.services.t34">Overnight Book Storage</td>
+<td>No</td>
+<td>No</td>
+<td data-bind="pages.services.t35"><strong>Yes, Desk &amp; Locker</strong></td>
+</tr>
+<tr>
+<td data-bind="pages.services.t36">Air Conditioning &amp; Power Backup</td>
+<td>Included</td>
+<td>Included</td>
+<td>Included</td>
+</tr>
+<tr>
+<td data-bind="pages.services.t37">High-Speed Optical Fiber Wi-Fi</td>
+<td>Included</td>
+<td>Included</td>
+<td data-bind="pages.services.t38"><strong>Priority Bandwidth</strong></td>
+</tr>
+<tr>
+<td data-bind="pages.services.t39">Cafeteria &amp; RO Water Station</td>
+<td>Included</td>
+<td>Included</td>
+<td>Included</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- ============ INFRASTRUCTURE AMENITIES ============ -->
+<section class="amenities-section">
+<div class="amenities-inner">
+<p class="eyebrow center" data-bind="pages.services.t40">Facility Highlights</p>
+<h2 class="section-title center" data-bind="pages.services.t41">Comprehensive Hall Infrastructure</h2>
+<p class="section-sub center" data-bind="pages.services.t42">Every amenity is maintained to institutional standards for serious revision.</p>
+<div class="amenities-grid">
+<div class="amenity-card">
+<div class="amenity-icon">
+<svg viewbox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"></path></svg>
+</div>
+<h3 data-bind="pages.services.t43">High-Speed Wi-Fi</h3>
+<p data-bind="pages.services.t44">Commercial optical fiber for streaming video lectures and test series without buffering.</p>
+</div>
+<div class="amenity-card">
+<div class="amenity-icon">
+<svg viewbox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"></path></svg>
+</div>
+<h3 data-bind="pages.services.t45">Continuous Power</h3>
+<p data-bind="pages.services.t46">Instant dual-inverter system plus standby generator ensuring 0 seconds interruption.</p>
+</div>
+<div class="amenity-card">
+<div class="amenity-icon">
+<svg viewbox="0 0 24 24"><path d="M5 20v-6a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v6M3 20h18M6 14V9a2 2 0 0 1 2-2h1M5 20v-3M19 20v-3"></path></svg>
+</div>
+<h3 data-bind="pages.services.t47">Ergonomic Chairs</h3>
+<p data-bind="pages.services.t48">Orthopedic cushioned mesh chairs with optimal lumbar support for 8+ hour study sessions.</p>
+</div>
+<div class="amenity-card">
+<div class="amenity-icon">
+<svg viewbox="0 0 24 24"><path d="M12 2v20M4.5 6.5l15 11M19.5 6.5l-15 11M12 8l-2.2-2.2M12 8l2.2-2.2M12 16l-2.2 2.2M12 16l2.2 2.2"></path></svg>
+</div>
+<h3 data-bind="pages.services.t49">AC Climate Control</h3>
+<p data-bind="pages.services.t50">Balanced temperature regulation in all seasons to prevent fatigue and drowsiness.</p>
+</div>
+<div class="amenity-card">
+<div class="amenity-icon">
+<svg viewbox="0 0 24 24"><path d="M12 2a5 5 0 0 0-5 5v7a5 5 0 0 0 10 0V7a5 5 0 0 0-5-5Z"></path><path d="M12 14v4M8 18h8"></path></svg>
+</div>
+<h3 data-bind="pages.services.t51">Personal Switchboards</h3>
+<p data-bind="pages.services.t52">Individual 3-pin power plugs right at your desk for laptop and tablet charging.</p>
+</div>
+<div class="amenity-card">
+<div class="amenity-icon">
+<svg viewbox="0 0 24 24"><path d="M4 10h13a3 3 0 0 1 0 6h-1M4 10v6a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3v-6M4 10 5 4h8l1 6M8 14v2M11 14v2"></path></svg>
+</div>
+<h3 data-bind="pages.services.t53">Clean Cafeteria</h3>
+<p data-bind="pages.services.t54">Separated dining room to eat lunch, enjoy tea, and take breaks without noise entering the hall.</p>
+</div>
+<div class="amenity-card">
+<div class="amenity-icon">
+<svg viewbox="0 0 24 24"><path d="M8 3v4M16 3v4M4 9h16M6 5h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"></path><path d="M12 13a3 3 0 0 0-3 3v1h6v-1a3 3 0 0 0-3-3Z"></path></svg>
+</div>
+<h3 data-bind="pages.services.t55">Sanitized Washrooms</h3>
+<p data-bind="pages.services.t56">Strictly maintained and hygienic washrooms cleaned multiple times daily.</p>
+</div>
+<div class="amenity-card">
+<div class="amenity-icon">
+<svg viewbox="0 0 24 24"><path d="M12 2 3 6v6c0 5 3.8 8.7 9 10 5.2-1.3 9-5 9-10V6l-9-4Z"></path></svg>
+</div>
+<h3 data-bind="pages.services.t57">24/7 CCTV Monitoring</h3>
+<p data-bind="pages.services.t58">Full security surveillance ensuring your study materials, laptops, and bags remain safe.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ PROCESS / HOW IT WORKS ============ -->
+<section class="process-section">
+<div class="process-inner">
+<p class="eyebrow center" data-bind="pages.services.t59">Easy Onboarding</p>
+<h2 class="section-title center" data-bind="pages.services.t60">How to get your seat in 3 steps.</h2>
+<div class="steps-grid">
+<div class="step-card">
+<div class="step-number">01</div>
+<h3 data-bind="pages.services.t61">Select Your Shift</h3>
+<p data-bind="pages.services.t62">Choose between Morning (9 AM–2 PM), Evening (2 PM–7 PM), or Full Day (9 AM–7 PM) depending on your study target.</p>
+</div>
+<div class="step-card">
+<div class="step-number">02</div>
+<h3 data-bind="pages.services.t63">Book Online or Walk In</h3>
+<p data-bind="pages.services.t64">Send an inquiry through our contact page, WhatsApp, or drop by our library on Circular Road for a quick desk tour.</p>
+</div>
+<div class="step-card">
+<div class="step-number">03</div>
+<h3 data-bind="pages.services.t65">Claim Your Desk</h3>
+<p data-bind="pages.services.t66">Get your assigned private desk, plug in your laptop, and begin your distraction-free preparation journey.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ FAQS ============ -->
+<section class="faq-section">
+<div class="faq-inner">
+<p class="eyebrow center" data-bind="pages.services.t67">Common Queries</p>
+<h2 class="section-title center" data-bind="pages.services.t68">Frequently Asked Questions</h2>
+<p class="section-sub center" data-bind="pages.services.t69">Everything you need to know about joining The Scholars Hub.</p>
+<div class="faq-grid">
+<div class="faq-item">
+<button class="faq-question" type="button">
+<span data-bind="pages.services.t70">Can I change my shift timings mid-month?</span>
+<svg class="faq-icon" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
+</button>
+<div class="faq-answer" data-bind="pages.services.t71">
+          Yes! Subject to seat availability in your requested shift, you can easily switch shifts by informing the library desk coordinator.
+        </div>
+</div>
+<div class="faq-item">
+<button class="faq-question" type="button">
+<span data-bind="pages.services.t72">Are personal laptops and study lamps allowed?</span>
+<svg class="faq-icon" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
+</button>
+<div class="faq-answer" data-bind="pages.services.t73">
+          Absolutely. Every desk is equipped with an individual power outlet specifically for your laptop, tablet, or mobile phone charger.
+        </div>
+</div>
+<div class="faq-item">
+<button class="faq-question" type="button">
+<span data-bind="pages.services.t74">Can I leave my books and notes at my desk?</span>
+<svg class="faq-icon" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
+</button>
+<div class="faq-answer" data-bind="pages.services.t75">
+          Full Access members have dedicated desks and can leave their study materials overnight. Locker options are also available for valuable belongings.
+        </div>
+</div>
+<div class="faq-item">
+<button class="faq-question" type="button">
+<span data-bind="pages.services.t76">Can I take a trial visit before paying the monthly fee?</span>
+<svg class="faq-icon" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
+</button>
+<div class="faq-answer" data-bind="pages.services.t77">
+          Yes, you are warmly invited to walk in during visiting hours, inspect the hall atmosphere, check the chair comfort, and test the Wi-Fi before booking your seat.
+        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+<div class="footer-top">
+<div class="footer-brand">
+<div class="brand">
+<span class="brand-mark" data-bind="business.shortName">SH</span>
+<span class="brand-name" data-bind="business.name">The Scholars Hub</span>
+</div>
+<p class="footer-desc" data-bind="business.tagline">Faridkot's quiet study space, built for exam preparation with uninterrupted power and climate-controlled peace.</p>
+</div>
+<div class="footer-col">
+<h4>Pages</h4>
+<ul class="footer-links">
+<li><a href="index.html">Home</a></li>
+<li><a data-bind="pages.services.t78" href="about.html">About Us</a></li>
+<li><a data-bind="pages.services.t79" href="services.html">Services &amp; Shifts</a></li>
+<li><a data-bind="pages.services.t80" href="gallery.html">Photo Gallery</a></li>
+<li><a data-bind="pages.services.t81" href="contact.html">Contact &amp; Visit</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Hours</h4>
+<div class="footer-contact-item" data-bind="business.hours">Open Daily: 8:00 AM – 9:00 PM</div>
+<div class="footer-contact-item" data-bind="pages.services.t82">Morning Shift: 9 AM – 2 PM</div>
+<div class="footer-contact-item" data-bind="pages.services.t83">Evening Shift: 2 PM – 7 PM</div>
+<div class="footer-contact-item" data-bind="pages.services.t84">Full Access: 9 AM – 7 PM</div>
+</div>
+<div class="footer-col">
+<h4>Location</h4>
+<div class="footer-contact-item" data-bind="business.address">Circular Road, Opp. Civil Hospital, Faridkot, Punjab 151203</div>
+<div class="footer-contact-item"><a data-bind="business.phone" data-bind-href="business.phoneTel" href="tel:+917888901014">+91 <span data-bind="business.phoneDisplay">78889 01014</span></a></div>
+<div class="footer-contact-item"><a data-bind="pages.services.t85" data-bind-href="business.whatsappLink" href="https://wa.me/917888901014" rel="noopener" target="_blank">Chat on WhatsApp →</a></div>
+</div>
+</div>
+<div class="footer-bottom">
+<span data-bind="business.copyright">The Scholars Hub, Faridkot — Punjab. All rights reserved.</span>
+<span class="siteai-badge">SiteAI Template Engine</span>
+</div>
+</footer>
+<script src="data/site-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

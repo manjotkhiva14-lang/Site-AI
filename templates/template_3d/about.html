@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title data-bind="pages.about.t01">About Us — The Scholars Hub, Faridkot</title>
+<meta content="Learn about The Scholars Hub, Faridkot's premier silent study library created for serious exam aspirants." data-bind-attr="content:pages.about.meta" name="description"/>
+<!-- Fonts: Fraunces for display headline, Inter for body text, JetBrains Mono for timings/fees -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body class="about-page">
+<!-- ============ NAV ============ -->
+<header class="site-header">
+<a class="brand" href="index.html">
+<span class="brand-mark" data-bind="business.shortName">SH</span>
+<span class="brand-name" data-bind="business.name">The Scholars Hub</span>
+</a>
+<nav class="site-nav" id="siteNav">
+<a class="nav-link" href="index.html">Home</a>
+<a class="nav-link active" href="about.html">About</a>
+<a class="nav-link" href="services.html">Services</a>
+<a class="nav-link" href="gallery.html">Gallery</a>
+<a class="nav-link" href="contact.html">Contact</a>
+</nav>
+<div class="nav-right">
+<a class="nav-cta" data-bind="pages.about.t02" href="contact.html">Reserve a seat</a>
+<button aria-expanded="false" aria-label="Toggle navigation" class="nav-toggle" id="navToggle">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+</header>
+<!-- ============ EDITORIAL MASTHEAD ============ -->
+<section class="editorial-masthead">
+<div class="editorial-masthead-inner">
+<div class="editorial-meta-bar" data-bind="pages.about.t03">
+<span class="editorial-meta-tag">About The Scholars Hub • Faridkot</span>
+<span class="editorial-meta-pill">Est. 2023 • Circular Road</span>
+</div>
+<h1 class="editorial-title" data-bind="pages.about.t04">A quiet sanctuary<br/>engineered for <em>deep work.</em></h1>
+<p class="editorial-lead" data-bind="pages.about.t05">Founded to eliminate power cuts, domestic interruptions, and ambient noise for Faridkot's serious competitive exam candidates.</p>
+</div>
+</section>
+<!-- ============ EDITORIAL STORY & BLUEPRINT ============ -->
+<section class="editorial-story-section">
+<div class="editorial-story-grid">
+<!-- Left: Narrative -->
+<div class="editorial-narrative">
+<p data-bind="pages.about.t06"><span class="drop-cap">P</span>reparing for high-stakes competitive examinations like UPSC, NEET, JEE, Banking, or Punjab Civil Services requires marathon hours of deep, uninterrupted revision. Yet studying at home often means dealing with unpredictable domestic noise, unannounced visitors, household errands, and disruptive summer power cuts that break your concentration.</p>
+<p data-bind="pages.about.t07">We built The Scholars Hub on Circular Road, Faridkot to provide a professional, uncompromising alternative: an air-conditioned silent library where every detail is optimized for intense cognitive work. Sound-absorbing carpeting, personal high-walled cubicles, stable commercial fiber internet, and full dual-inverter power backup ensure you never lose a minute of your study session.</p>
+<div class="editorial-pullquote">
+<blockquote data-bind="pages.about.t08">
+          "In competitive exams, knowledge is half the battle; the other half is the discipline and focus of your study environment."
+        </blockquote>
+<cite data-bind="pages.about.t09">— The Scholars Hub Founding Principle</cite>
+</div>
+<p data-bind="pages.about.t10">When you enter our study hall, you are surrounded by fellow aspirants working toward their own ambitions. There is no conversation, no mobile chatter, and no distraction — only the quiet, energizing hum of collective dedication.</p>
+</div>
+<!-- Right: Architectural Blueprint Visual -->
+<div class="editorial-blueprint-card">
+<div class="blueprint-header" data-bind="pages.about.t11">
+<span class="blueprint-label">Hall Architecture</span>
+<span class="blueprint-label" style="color:var(--muted)">Acoustic Layout</span>
+</div>
+<div class="blueprint-visual">
+<svg aria-label="Study Hall Blueprint Layout" style="width: 100%; height: auto;" viewbox="0 0 280 180">
+<!-- Outer hall outline -->
+<rect fill="#F8FAFC" height="160" rx="4" stroke="#002D62" stroke-width="1.8" width="260" x="10" y="10"></rect>
+<!-- Silent Zone Partition line -->
+<line stroke="#002D62" stroke-dasharray="4 3" stroke-width="1.2" x1="10" x2="270" y1="120" y2="120"></line>
+<text fill="#6C7A9F" font-family="JetBrains Mono" font-size="8" x="18" y="136">BREAK BUFFER &amp; LOBBY</text>
+<!-- Study Desks Row A -->
+<rect fill="#EAF1F7" height="35" rx="2" stroke="#002D62" stroke-width="1" width="45" x="25" y="25"></rect>
+<text fill="#002D62" font-family="JetBrains Mono" font-size="7" x="35" y="46">DESK 01</text>
+<rect fill="#EAF1F7" height="35" rx="2" stroke="#002D62" stroke-width="1" width="45" x="80" y="25"></rect>
+<text fill="#002D62" font-family="JetBrains Mono" font-size="7" x="90" y="46">DESK 02</text>
+<rect fill="#EAF1F7" height="35" rx="2" stroke="#002D62" stroke-width="1" width="45" x="135" y="25"></rect>
+<text fill="#002D62" font-family="JetBrains Mono" font-size="7" x="145" y="46">DESK 03</text>
+<rect fill="#EAF1F7" height="35" rx="2" stroke="#002D62" stroke-width="1" width="45" x="190" y="25"></rect>
+<text fill="#002D62" font-family="JetBrains Mono" font-size="7" x="200" y="46">DESK 04</text>
+<!-- Study Desks Row B -->
+<rect fill="#EAF1F7" height="35" rx="2" stroke="#002D62" stroke-width="1" width="45" x="25" y="70"></rect>
+<text fill="#002D62" font-family="JetBrains Mono" font-size="7" x="35" y="91">DESK 05</text>
+<rect fill="#EAF1F7" height="35" rx="2" stroke="#002D62" stroke-width="1" width="45" x="80" y="70"></rect>
+<text fill="#002D62" font-family="JetBrains Mono" font-size="7" x="90" y="91">DESK 06</text>
+<rect fill="#EAF1F7" height="35" rx="2" stroke="#002D62" stroke-width="1" width="45" x="135" y="70"></rect>
+<text fill="#002D62" font-family="JetBrains Mono" font-size="7" x="145" y="91">DESK 07</text>
+<rect fill="#EAF1F7" height="35" rx="2" stroke="#002D62" stroke-width="1" width="45" x="190" y="70"></rect>
+<text fill="#002D62" font-family="JetBrains Mono" font-size="7" x="200" y="91">DESK 08</text>
+<!-- Acoustic Silent Zone Label -->
+<rect fill="#002D62" height="9" rx="2" width="130" x="75" y="12"></rect>
+<text fill="#FFFFFF" font-family="JetBrains Mono" font-size="6.5" font-weight="bold" x="85" y="19">ACOUSTIC SILENT ZONE</text>
+<!-- Cafeteria & Inverter corner -->
+<rect fill="#EAF1F7" height="30" rx="2" stroke="#002D62" stroke-width="0.8" width="60" x="200" y="132"></rect>
+<text fill="#002D62" font-family="JetBrains Mono" font-size="6.5" x="206" y="150">CAFETERIA</text>
+<rect fill="#ADD8E6" height="20" rx="2" stroke="#002D62" stroke-width="0.8" width="35" x="25" y="142"></rect>
+<text fill="#002D62" font-family="JetBrains Mono" font-size="6" x="30" y="155">UPS/PWR</text>
+</svg>
+</div>
+<ul class="blueprint-list">
+<li>
+<svg fill="none" viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2"></path></svg>
+          <span data-bind="pages.about.t46">Individual private cubicles with partition dividers</span>
+        </li>
+<li>
+<svg fill="none" viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2"></path></svg>
+          <span data-bind="pages.about.t47">4000K anti-glare, flicker-free ceiling illumination</span>
+        </li>
+<li>
+<svg fill="none" viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2"></path></svg>
+          <span data-bind="pages.about.t48">Instant dual-inverter + generator automatic transfer</span>
+        </li>
+<li>
+<svg fill="none" viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2"></path></svg>
+          <span data-bind="pages.about.t49">Dedicated soundproofed cafeteria lounge</span>
+        </li>
+</ul>
+</div>
+</div>
+</section>
+<!-- ============ EDITORIAL METRICS STRIP ============ -->
+<section class="editorial-metrics-section">
+<div class="editorial-metrics-grid">
+<div class="editorial-metric-card">
+<div class="metric-number">100+</div>
+<div class="metric-title" data-bind="pages.about.t12">Dedicated Desks</div>
+<div class="metric-caption" data-bind="pages.about.t13">Equipped with 3-pin power &amp; study cubicles</div>
+</div>
+<div class="editorial-metric-card">
+<div class="metric-number">99.9%</div>
+<div class="metric-title" data-bind="pages.about.t14">Power Uptime</div>
+<div class="metric-caption" data-bind="pages.about.t15">Dual inverter &amp; generator standby systems</div>
+</div>
+<div class="editorial-metric-card">
+<div class="metric-number" data-bind="pages.about.t16">13 hrs</div>
+<div class="metric-title" data-bind="pages.about.t17">Daily Operating</div>
+<div class="metric-caption" data-bind="pages.about.t18">Open 7 days a week: 8:00 AM – 9:00 PM</div>
+</div>
+<div class="editorial-metric-card">
+<div class="metric-number" data-bind="pages.about.t19">0 dB</div>
+<div class="metric-title" data-bind="pages.about.t20">Strict Silent Rule</div>
+<div class="metric-caption" data-bind="pages.about.t21">Monitored zero-disturbance policy</div>
+</div>
+</div>
+</section>
+<!-- ============ EDITORIAL PILLARS ============ -->
+<section class="editorial-pillars-section">
+<div class="editorial-pillars-inner">
+<p class="eyebrow" data-bind="pages.about.t22">Guiding Standards</p>
+<h2 class="section-title" data-bind="pages.about.t23">The three pillars of our space.</h2>
+<div class="editorial-pillars-grid">
+<div class="editorial-pillar-card">
+<div class="pillar-number" data-bind="pages.about.t24">01 / DISCIPLINE</div>
+<h3 data-bind="pages.about.t25">Zero-Distraction Culture</h3>
+<p data-bind="pages.about.t26">A strictly monitored no-talking policy inside the study halls ensures your concentration remains unbroken through morning, evening, or all-day study shifts.</p>
+</div>
+<div class="editorial-pillar-card">
+<div class="pillar-number" data-bind="pages.about.t27">02 / ERGONOMICS</div>
+<h3 data-bind="pages.about.t28">Physical Comfort for Long Hours</h3>
+<p data-bind="pages.about.t29">Breathable orthopedic mesh chairs with adjustable lumbar support, paired with non-flicker 4000K lighting designed specifically to avoid eye fatigue and spinal strain.</p>
+</div>
+<div class="editorial-pillar-card">
+<div class="pillar-number" data-bind="pages.about.t30">03 / MOMENTUM</div>
+<h3 data-bind="pages.about.t31">Community of Achievers</h3>
+<p data-bind="pages.about.t32">Surround yourself with disciplined candidates preparing for civil services, medicine, engineering, and banking whose consistent routine inspires you every single day.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ EDITORIAL CHARTER ============ -->
+<section class="editorial-charter-section">
+<div class="editorial-charter-inner">
+<div class="charter-card">
+<h3 data-bind="pages.about.t33">Library Conduct Charter</h3>
+<ul class="charter-list">
+<li>
+<span class="charter-num">1</span>
+<div data-bind="pages.about.t34"><strong>Silent Mode at All Times:</strong> Mobile phones must be set to silent or flight mode upon entering the premises. Calls must be attended in the outer lobby.</div>
+</li>
+<li>
+<span class="charter-num">2</span>
+<div data-bind="pages.about.t35"><strong>Headphone Discipline:</strong> Audio from lecture videos, tests, and music must be kept at a volume that does not leak to neighboring desks.</div>
+</li>
+<li>
+<span class="charter-num">3</span>
+<div data-bind="pages.about.t36"><strong>Cafeteria-Only Dining:</strong> Meals, snacks, and aromatic beverages must be consumed exclusively in the separated cafeteria break room.</div>
+</li>
+<li>
+<span class="charter-num">4</span>
+<div data-bind="pages.about.t37"><strong>Mutual Respect &amp; Quiet Movement:</strong> Please walk quietly, avoid scraping chairs, and respect the deep work focus of fellow scholars.</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+<div class="footer-top">
+<div class="footer-brand">
+<div class="brand">
+<span class="brand-mark" data-bind="business.shortName">SH</span>
+<span class="brand-name" data-bind="business.name">The Scholars Hub</span>
+</div>
+<p class="footer-desc" data-bind="business.tagline">Faridkot's quiet study space, built for exam preparation with uninterrupted power and climate-controlled peace.</p>
+</div>
+<div class="footer-col">
+<h4>Pages</h4>
+<ul class="footer-links">
+<li><a href="index.html">Home</a></li>
+<li><a data-bind="pages.about.t38" href="about.html">About Us</a></li>
+<li><a data-bind="pages.about.t39" href="services.html">Services &amp; Shifts</a></li>
+<li><a data-bind="pages.about.t40" href="gallery.html">Photo Gallery</a></li>
+<li><a data-bind="pages.about.t41" href="contact.html">Contact &amp; Visit</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Hours</h4>
+<div class="footer-contact-item" data-bind="business.hours">Open Daily: 8:00 AM – 9:00 PM</div>
+<div class="footer-contact-item" data-bind="pages.about.t42">Morning Shift: 9 AM – 2 PM</div>
+<div class="footer-contact-item" data-bind="pages.about.t43">Evening Shift: 2 PM – 7 PM</div>
+<div class="footer-contact-item" data-bind="pages.about.t44">Full Access: 9 AM – 7 PM</div>
+</div>
+<div class="footer-col">
+<h4>Location</h4>
+<div class="footer-contact-item" data-bind="business.address">Circular Road, Opp. Civil Hospital, Faridkot, Punjab 151203</div>
+<div class="footer-contact-item"><a data-bind="business.phone" data-bind-href="business.phoneTel" href="tel:+917888901014">+91 <span data-bind="business.phoneDisplay">78889 01014</span></a></div>
+<div class="footer-contact-item"><a data-bind="pages.about.t45" data-bind-href="business.whatsappLink" href="https://wa.me/917888901014" rel="noopener" target="_blank">Chat on WhatsApp →</a></div>
+</div>
+</div>
+<div class="footer-bottom">
+<span data-bind="business.copyright">The Scholars Hub, Faridkot — Punjab. All rights reserved.</span>
+<span class="siteai-badge">SiteAI Template Engine</span>
+</div>
+</footer>
+<script src="data/site-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

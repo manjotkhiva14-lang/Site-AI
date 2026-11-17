@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title data-bind="pages.gallery.t01">Photo Gallery — The Scholars Hub, Faridkot</title>
+<meta content="Explore virtual photos and tour the quiet study environment, ergonomic workstations, and facilities at The Scholars Hub, Faridkot." data-bind-attr="content:pages.gallery.meta" name="description"/>
+<!-- Fonts: Fraunces for display headline, Inter for body text, JetBrains Mono for timings/fees -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+<!-- PHOTO SLOTS: each card tries images/photo-N.jpg/.webp/.png. If none exists, the img removes itself and the illustration shows. -->
+<style>
+  .gallery-visual { position: relative; overflow: hidden; }
+  .gallery-visual .gallery-photo {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    object-fit: cover; z-index: 5;
+  }
+  .gallery-visual .gallery-tag { z-index: 6; }
+  /* when a photo is present, hide the illustration */
+  .gallery-visual:has(.gallery-photo) .gallery-art { display: none; }
+</style>
+</head>
+<body class="gallery-page">
+<!-- ============ NAV ============ -->
+<header class="site-header">
+<a class="brand" href="index.html">
+<span class="brand-mark" data-bind="business.shortName">SH</span>
+<span class="brand-name" data-bind="business.name">The Scholars Hub</span>
+</a>
+<nav class="site-nav" id="siteNav">
+<a class="nav-link" href="index.html">Home</a>
+<a class="nav-link" href="about.html">About</a>
+<a class="nav-link" href="services.html">Services</a>
+<a class="nav-link active" href="gallery.html">Gallery</a>
+<a class="nav-link" href="contact.html">Contact</a>
+</nav>
+<div class="nav-right">
+<a class="nav-cta" data-bind="pages.gallery.t02" href="contact.html">Reserve a seat</a>
+<button aria-expanded="false" aria-label="Toggle navigation" class="nav-toggle" id="navToggle">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+</header>
+<!-- ============ GALLERY MASTHEAD ============ -->
+<section class="gallery-masthead">
+<div class="gallery-masthead-inner">
+<p class="eyebrow" data-bind="gallery.heroEyebrow">Visual Tour &amp; Environment</p>
+<h1 class="editorial-title" data-bind="gallery.heroTitle">A visual walkthrough of<br/><em>our study space.</em></h1>
+<p class="editorial-lead" data-bind="gallery.heroSub">Clean lines, anti-glare illumination, acoustic quiet, and dedicated study infrastructure on Circular Road, Faridkot.</p>
+<div class="filter-bar">
+<button class="filter-btn active" data-bind="pages.gallery.t03" data-filter="all" type="button">All Views</button>
+<button class="filter-btn" data-bind="pages.gallery.t04" data-filter="Study Hall" type="button">Study Hall</button>
+<button class="filter-btn" data-filter="Workstations" type="button">Workstations</button>
+<button class="filter-btn" data-filter="Facilities" type="button">Facilities</button>
+</div>
+</div>
+</section>
+<!-- ============ STAGGERED DYNAMIC GALLERY GRID ============ -->
+<section class="staggered-gallery-section">
+<div class="staggered-gallery-inner">
+<div class="staggered-gallery-grid">
+<!-- Card 1: Wide Featured Card -->
+<div class="gallery-card span-2" data-category="Study Hall">
+<div class="gallery-visual">
+<img alt="" class="gallery-photo" data-src="images/photo-1" loading="lazy"/>
+<span class="gallery-tag" data-bind="pages.gallery.t05">Main Reading Hall</span>
+<div class="gallery-art">
+<svg aria-label="Reading Hall Visual" style="width:220px; height:125px;" viewbox="0 0 240 140">
+<!-- Reading room perspective vector -->
+<rect fill="#F8FAFC" height="110" rx="8" stroke="#002D62" stroke-width="2" width="210" x="15" y="15"></rect>
+<line stroke="#002D62" stroke-dasharray="4 2" stroke-width="1.5" x1="15" x2="225" y1="95" y2="95"></line>
+<!-- Desks row -->
+<rect fill="#FFFFFF" height="42" rx="3" stroke="#002D62" stroke-width="1.5" width="45" x="30" y="45"></rect>
+<rect fill="#FFFFFF" height="42" rx="3" stroke="#002D62" stroke-width="1.5" width="45" x="85" y="45"></rect>
+<rect fill="#FFFFFF" height="42" rx="3" stroke="#002D62" stroke-width="1.5" width="45" x="140" y="45"></rect>
+<!-- Lamps & Illumination glow -->
+<circle cx="52" cy="35" fill="#ADD8E6" r="5" stroke="#002D62" stroke-width="1.2"></circle>
+<circle cx="107" cy="35" fill="#ADD8E6" r="5" stroke="#002D62" stroke-width="1.2"></circle>
+<circle cx="162" cy="35" fill="#ADD8E6" r="5" stroke="#002D62" stroke-width="1.2"></circle>
+<!-- Reading items -->
+<line stroke="#002D62" stroke-width="2" x1="38" x2="65" y1="70" y2="70"></line>
+<line stroke="#002D62" stroke-width="2" x1="93" x2="120" y1="70" y2="70"></line>
+<line stroke="#002D62" stroke-width="2" x1="148" x2="175" y1="70" y2="70"></line>
+</svg>
+</div>
+</div>
+<div class="gallery-body">
+<h3 class="gallery-title" data-bind="pages.gallery.t06">Air-Conditioned Reading Hall</h3>
+<p class="gallery-desc" data-bind="pages.gallery.t07">Expansive silent study hall with wide central aisles, sound-dampening flooring, and dual climate-control units.</p>
+<div class="gallery-cta">
+<span data-bind="pages.gallery.t08">Click to inspect details</span>
+<svg viewbox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+</div>
+</div>
+</div>
+<!-- Card 2: Tall Vertical Card -->
+<div class="gallery-card span-tall" data-category="Workstations">
+<div class="gallery-visual">
+<img alt="" class="gallery-photo" data-src="images/photo-2" loading="lazy"/>
+<span class="gallery-tag">Workstations</span>
+<div class="gallery-art">
+<svg aria-label="Individual Cubicle Visual" style="width:140px; height:180px;" viewbox="0 0 160 200">
+<!-- Cubicle tall perspective -->
+<rect fill="#FFFFFF" height="160" rx="6" stroke="#002D62" stroke-width="2" width="120" x="20" y="20"></rect>
+<!-- High Partition walls -->
+<path d="M20 20 L55 50 L55 180 L20 180 Z" fill="#EAF1F7" stroke="#002D62" stroke-width="1.5"></path>
+<path d="M140 20 L105 50 L105 180 L140 180 Z" fill="#EAF1F7" stroke="#002D62" stroke-width="1.5"></path>
+<!-- Laptop on desk -->
+<rect fill="#EAF1F7" height="24" rx="2" stroke="#002D62" stroke-width="1.5" width="36" x="62" y="105"></rect>
+<polygon fill="#CBD5E1" points="56,129 104,129 100,133 60,133" stroke="#002D62" stroke-width="1.2"></polygon>
+<!-- Ergonomic Chair symbol -->
+<ellipse cx="80" cy="155" fill="#002D62" rx="18" ry="12"></ellipse>
+<line stroke="#002D62" stroke-width="2" x1="80" x2="80" y1="167" y2="180"></line>
+<!-- Personal power socket -->
+<rect fill="#FFFFFF" height="12" rx="1" stroke="#002D62" stroke-width="1" width="16" x="65" y="60"></rect>
+<circle cx="70" cy="66" fill="#002D62" r="1"></circle>
+<circle cx="76" cy="66" fill="#002D62" r="1"></circle>
+</svg>
+</div>
+</div>
+<div class="gallery-body">
+<h3 class="gallery-title" data-bind="pages.gallery.t09">Individual Ergonomic Cubicles</h3>
+<p class="gallery-desc" data-bind="pages.gallery.t10">Custom high-walled wooden desks offering complete privacy from peripheral movements, paired with breathable lumbar-support chairs and personal switchboards.</p>
+<div class="gallery-cta">
+<span data-bind="pages.gallery.t08">Click to inspect details</span>
+<svg viewbox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+</div>
+</div>
+</div>
+<!-- Card 3: Power Backup Room -->
+<div class="gallery-card" data-category="Facilities">
+<div class="gallery-visual">
+<img alt="" class="gallery-photo" data-src="images/photo-3" loading="lazy"/>
+<span class="gallery-tag" data-bind="pages.gallery.t11">Power Setup</span>
+<div class="gallery-art">
+<svg aria-label="Power Backup Visual" style="width:140px; height:105px;" viewbox="0 0 160 120">
+<rect fill="#EAF1F7" height="75" rx="6" stroke="#002D62" stroke-width="2" width="110" x="25" y="25"></rect>
+<!-- Battery Bars -->
+<rect fill="#002D62" height="30" rx="2" width="15" x="40" y="55"></rect>
+<rect fill="#002D62" height="35" rx="2" width="15" x="60" y="50"></rect>
+<rect fill="#002D62" height="40" rx="2" width="15" x="80" y="45"></rect>
+<rect fill="#25D366" height="45" rx="2" width="15" x="100" y="40"></rect>
+<!-- Lightning Bolt -->
+<polygon fill="#002D62" points="76,16 68,30 78,30 74,42 88,28 78,28"></polygon>
+</svg>
+</div>
+</div>
+<div class="gallery-body">
+<h3 class="gallery-title" data-bind="pages.gallery.t12">Continuous Power Backup</h3>
+<p class="gallery-desc" data-bind="pages.gallery.t13">Instant dual-inverter system backed by a generator standby to eliminate dark hours during city outages.</p>
+<div class="gallery-cta">
+<span data-bind="pages.gallery.t08">Click to inspect details</span>
+<svg viewbox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+</div>
+</div>
+</div>
+<!-- Card 4: Cafeteria & Break Lounge -->
+<div class="gallery-card" data-category="Facilities">
+<div class="gallery-visual">
+<img alt="" class="gallery-photo" data-src="images/photo-4" loading="lazy"/>
+<span class="gallery-tag" data-bind="pages.gallery.t14">Cafeteria Lounge</span>
+<div class="gallery-art">
+<svg aria-label="Cafeteria Lounge Visual" style="width:140px; height:105px;" viewbox="0 0 160 120">
+<rect fill="#FFFFFF" height="75" rx="6" stroke="#002D62" stroke-width="2" width="110" x="25" y="25"></rect>
+<ellipse cx="80" cy="65" fill="#EAF1F7" rx="35" ry="16" stroke="#002D62" stroke-width="1.5"></ellipse>
+<!-- Coffee Cup -->
+<path d="M72 56 h16 v12 a6 6 0 0 1 -16 0 Z" fill="#002D62"></path>
+<path d="M88 60 a3 3 0 0 0 0 5" fill="none" stroke="#002D62" stroke-width="1.5"></path>
+<!-- Steam -->
+<path d="M76 48 Q78 42 76 36 M82 48 Q84 42 82 36" fill="none" stroke="#CBD5E1" stroke-width="1.5"></path>
+</svg>
+</div>
+</div>
+<div class="gallery-body">
+<h3 class="gallery-title" data-bind="pages.gallery.t15">Clean Cafeteria &amp; Break Lounge</h3>
+<p class="gallery-desc" data-bind="pages.gallery.t16">Separated dining area where members can unpack lunch, have coffee, and relax without disturbing the quiet zone.</p>
+<div class="gallery-cta">
+<span data-bind="pages.gallery.t08">Click to inspect details</span>
+<svg viewbox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+</div>
+</div>
+</div>
+<!-- Card 5: Wide Lighting Environment -->
+<div class="gallery-card span-2" data-category="Study Hall">
+<div class="gallery-visual">
+<img alt="" class="gallery-photo" data-src="images/photo-5" loading="lazy"/>
+<span class="gallery-tag" data-bind="pages.gallery.t17">Anti-Glare Lighting</span>
+<div class="gallery-art">
+<svg aria-label="Anti-Glare Illumination Visual" style="width:220px; height:105px;" viewbox="0 0 240 120">
+<!-- Radial illumination waves -->
+<circle cx="120" cy="55" fill="rgba(173,216,230,0.25)" r="50" stroke="#002D62" stroke-dasharray="3 3"></circle>
+<circle cx="120" cy="55" fill="rgba(173,216,230,0.45)" r="32"></circle>
+<circle cx="120" cy="55" fill="#FFFFFF" r="16" stroke="#002D62" stroke-width="2"></circle>
+<!-- Light Rays -->
+<line stroke="#002D62" stroke-width="2" x1="120" x2="120" y1="5" y2="18"></line>
+<line stroke="#002D62" stroke-width="2" x1="120" x2="120" y1="92" y2="105"></line>
+<line stroke="#002D62" stroke-width="2" x1="70" x2="83" y1="55" y2="55"></line>
+<line stroke="#002D62" stroke-width="2" x1="157" x2="170" y1="55" y2="55"></line>
+</svg>
+</div>
+</div>
+<div class="gallery-body">
+<h3 class="gallery-title" data-bind="pages.gallery.t18">Warm Anti-Glare 4000K Lighting</h3>
+<p class="gallery-desc" data-bind="pages.gallery.t19">Balanced, diffuse study illumination engineered specifically to eliminate shadows and prevent optical fatigue during late evening revisions.</p>
+<div class="gallery-cta">
+<span data-bind="pages.gallery.t08">Click to inspect details</span>
+<svg viewbox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+</div>
+</div>
+</div>
+<!-- Card 6: Lockers & Washrooms -->
+<div class="gallery-card" data-category="Facilities">
+<div class="gallery-visual">
+<img alt="" class="gallery-photo" data-src="images/photo-6" loading="lazy"/>
+<span class="gallery-tag" data-bind="pages.gallery.t20">Storage &amp; Hygiene</span>
+<div class="gallery-art">
+<svg aria-label="Lockers and Amenities Visual" style="width:140px; height:105px;" viewbox="0 0 160 120">
+<rect fill="#EAF1F7" height="75" rx="6" stroke="#002D62" stroke-width="2" width="110" x="25" y="25"></rect>
+<!-- Lockers -->
+<rect fill="#FFFFFF" height="55" stroke="#002D62" stroke-width="1.2" width="26" x="35" y="35"></rect>
+<circle cx="48" cy="62" fill="#002D62" r="2"></circle>
+<rect fill="#FFFFFF" height="55" stroke="#002D62" stroke-width="1.2" width="26" x="67" y="35"></rect>
+<circle cx="80" cy="62" fill="#002D62" r="2"></circle>
+<rect fill="#FFFFFF" height="55" stroke="#002D62" stroke-width="1.2" width="26" x="99" y="35"></rect>
+<circle cx="112" cy="62" fill="#002D62" r="2"></circle>
+</svg>
+</div>
+</div>
+<div class="gallery-body">
+<h3 class="gallery-title" data-bind="pages.gallery.t21">Hygienic Washrooms &amp; Lockers</h3>
+<p class="gallery-desc" data-bind="pages.gallery.t22">Continually sanitized restrooms and dedicated book locker units for Full Access members to store heavy reference books.</p>
+<div class="gallery-cta">
+<span data-bind="pages.gallery.t08">Click to inspect details</span>
+<svg viewbox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ LIGHTBOX MODAL ============ -->
+<div aria-labelledby="modalTitle" aria-modal="true" class="gallery-modal" id="galleryModal" role="dialog">
+<div class="gallery-modal-content">
+<button aria-label="Close modal" class="gallery-modal-close" id="galleryModalClose">
+<svg class="icon" viewbox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"></path></svg>
+</button>
+<div class="gallery-modal-visual">
+<div id="modalArt" style="transform: scale(1.3);"></div>
+</div>
+<div class="gallery-modal-body">
+<div class="gallery-modal-tag" id="modalTag">Facility</div>
+<h3 class="gallery-modal-title" data-bind="pages.gallery.t23" id="modalTitle">Facility View</h3>
+<p class="gallery-modal-desc" data-bind="pages.gallery.t24" id="modalDesc">Detailed description of the library space and setup.</p>
+<div style="margin-top: 1.5rem;">
+<a class="btn btn-primary" data-bind="pages.gallery.t25" href="contact.html" style="font-size:0.85rem; padding: 0.65rem 1.3rem;">Schedule an In-Person Visit</a>
+</div>
+</div>
+</div>
+</div>
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+<div class="footer-top">
+<div class="footer-brand">
+<div class="brand">
+<span class="brand-mark" data-bind="business.shortName">SH</span>
+<span class="brand-name" data-bind="business.name">The Scholars Hub</span>
+</div>
+<p class="footer-desc" data-bind="business.tagline">Faridkot's quiet study space, built for exam preparation with uninterrupted power and climate-controlled peace.</p>
+</div>
+<div class="footer-col">
+<h4>Pages</h4>
+<ul class="footer-links">
+<li><a href="index.html">Home</a></li>
+<li><a data-bind="pages.gallery.t26" href="about.html">About Us</a></li>
+<li><a data-bind="pages.gallery.t27" href="services.html">Services &amp; Shifts</a></li>
+<li><a data-bind="pages.gallery.t28" href="gallery.html">Photo Gallery</a></li>
+<li><a data-bind="pages.gallery.t29" href="contact.html">Contact &amp; Visit</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Hours</h4>
+<div class="footer-contact-item" data-bind="business.hours">Open Daily: 8:00 AM – 9:00 PM</div>
+<div class="footer-contact-item" data-bind="pages.gallery.t30">Morning Shift: 9 AM – 2 PM</div>
+<div class="footer-contact-item" data-bind="pages.gallery.t31">Evening Shift: 2 PM – 7 PM</div>
+<div class="footer-contact-item" data-bind="pages.gallery.t32">Full Access: 9 AM – 7 PM</div>
+</div>
+<div class="footer-col">
+<h4>Location</h4>
+<div class="footer-contact-item" data-bind="business.address">Circular Road, Opp. Civil Hospital, Faridkot, Punjab 151203</div>
+<div class="footer-contact-item"><a data-bind="business.phone" data-bind-href="business.phoneTel" href="tel:+917888901014">+91 <span data-bind="business.phoneDisplay">78889 01014</span></a></div>
+<div class="footer-contact-item"><a data-bind="pages.gallery.t33" data-bind-href="business.whatsappLink" href="https://wa.me/917888901014" rel="noopener" target="_blank">Chat on WhatsApp →</a></div>
+</div>
+</div>
+<div class="footer-bottom">
+<span data-bind="business.copyright">The Scholars Hub, Faridkot — Punjab. All rights reserved.</span>
+<span class="siteai-badge">SiteAI Template Engine</span>
+</div>
+</footer>
+<script>
+document.querySelectorAll('.gallery-photo').forEach(function (img) {
+  var base = img.dataset.src, exts = ['jpg', 'webp', 'png', 'jpeg'], i = 0;
+  img.onerror = function () {
+    i++;
+    if (i < exts.length) { img.src = base + '.' + exts[i]; } else { img.remove(); }
+  };
+  img.src = base + '.' + exts[0];
+});
+</script>
+<script src="data/site-data.js"></script>
+<script src="script.js"></script>
+<script>
+/* Lightbox: show the real photo when the card has one, otherwise keep the illustration */
+window.addEventListener('load', function () {
+  var art = document.getElementById('modalArt');
+  if (!art) return;
+  document.querySelectorAll('.gallery-card').forEach(function (card) {
+    card.addEventListener('click', function () {
+      var photo = card.querySelector('.gallery-photo');
+      if (photo) {
+        art.style.transform = 'none';
+        art.innerHTML = '<img src="' + photo.src + '" alt="" style="display:block;margin:auto;max-width:100%;max-height:60vh;object-fit:contain;border-radius:12px">';
+      } else {
+        art.style.transform = 'scale(1.3)';
+      }
+    });
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title data-bind="pages.contact.t01">Contact &amp; Reserve — The Scholars Hub, Faridkot</title>
+<meta content="Contact The Scholars Hub library in Faridkot. Book your study seat, inquire about shifts, or visit us on Circular Road." data-bind-attr="content:pages.contact.meta" name="description"/>
+<!-- Fonts: Fraunces for display headline, Inter for body text, JetBrains Mono for timings/fees -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body class="contact-page">
+<!-- ============ NAV ============ -->
+<header class="site-header">
+<a class="brand" href="index.html">
+<span class="brand-mark" data-bind="business.shortName">SH</span>
+<span class="brand-name" data-bind="business.name">The Scholars Hub</span>
+</a>
+<nav class="site-nav" id="siteNav">
+<a class="nav-link" href="index.html">Home</a>
+<a class="nav-link" href="about.html">About</a>
+<a class="nav-link" href="services.html">Services</a>
+<a class="nav-link" href="gallery.html">Gallery</a>
+<a class="nav-link active" href="contact.html">Contact</a>
+</nav>
+<div class="nav-right">
+<a class="nav-cta" data-bind="pages.contact.t02" href="contact.html">Reserve a seat</a>
+<button aria-expanded="false" aria-label="Toggle navigation" class="nav-toggle" id="navToggle">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+</header>
+<!-- ============ CONTACT MASTHEAD ============ -->
+<section class="contact-masthead">
+<div class="contact-masthead-inner">
+<p class="eyebrow" data-bind="contact.heroEyebrow">Visit Us or Get In Touch</p>
+<h1 class="editorial-title" data-bind="contact.heroTitle">Come see your seat<br/><em>before you book it.</em></h1>
+<p class="editorial-lead" data-bind="contact.heroSub">Walk-ins are always welcome during operating hours. Drop by our library on Circular Road, Faridkot to inspect the desks in person, or submit a reservation request below.</p>
+<div class="contact-quick-bar">
+<a class="btn btn-whatsapp" data-bind-href="business.whatsappLink" href="https://wa.me/917888901014" rel="noopener" target="_blank">
+<svg class="icon" viewbox="0 0 24 24"><path d="M17.5 6.5a7.5 7.5 0 0 0-12.1 8.6L4 21l6-1.4A7.5 7.5 0 0 0 17.5 6.5Z"></path><path d="M9 9.3c0 3.5 2.9 6.3 6.3 6.3.5 0 .9-.4.9-.9v-.9l-2.1-.7-.7 1a4.6 4.6 0 0 1-2.9-2.9l1-.7-.7-2.1H9.9c-.5 0-.9.4-.9.9Z"></path></svg>
+        WhatsApp: <span data-bind="business.phoneDisplay">78889 01014</span>
+      </a>
+<a class="btn btn-primary" data-bind-href="business.phoneTel" href="tel:+917888901014">
+<svg class="icon" viewbox="0 0 24 24"><path d="M6.5 4h3l1.5 4.5-2.2 1.6a11.5 11.5 0 0 0 5.1 5.1l1.6-2.2 4.5 1.5v3c0 1.1-.9 2-2 2C10.6 19.5 4.5 13.4 4.5 6.5c0-1.1.9-2 2-2Z"></path></svg>
+        Call <span data-bind="business.phoneDisplay">78889 01014</span>
+      </a>
+<a class="btn btn-ghost" data-bind-href="business.instagramUrl" href="https://instagram.com/the_scholars_hub_library_fdk" rel="noopener" target="_blank">
+<svg class="icon" viewbox="0 0 24 24"><rect height="18" rx="5" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="1"></circle></svg>
+        <span data-bind="business.instagram">@the_scholars_hub_library_fdk</span>
+      </a>
+</div>
+</div>
+</section>
+<!-- ============ DEDICATED CONTACT & LOCATION SECTION ============ -->
+<section class="contact-main-section">
+<div class="contact-main-grid">
+<!-- Left: Reservation Form -->
+<div class="contact-form-card">
+<h3 data-bind="pages.contact.t03">Reserve Your Seat</h3>
+<p class="form-sub" data-bind="pages.contact.t04">Submit your preferred shift and target joining date. We verify desk availability and confirm on WhatsApp within minutes.</p>
+<form id="reservationForm">
+<div class="form-grid">
+<div class="form-group full-width">
+<label class="form-label" data-bind="pages.contact.t05" for="applicantName">Full Name *</label>
+<input class="form-input" id="applicantName" name="name" placeholder="e.g. Gurpreet Singh" required="" type="text"/>
+</div>
+<div class="form-group">
+<label class="form-label" data-bind="pages.contact.t06" for="applicantPhone">Phone Number (WhatsApp) *</label>
+<input class="form-input" id="applicantPhone" name="phone" placeholder="e.g. 78889 01014" required="" type="tel"/>
+</div>
+<div class="form-group">
+<label class="form-label" data-bind="pages.contact.t07" for="shiftChoice">Preferred Shift *</label>
+<select class="form-select" id="shiftChoice" name="shift" required="">
+<option data-bind="pages.contact.t08">Morning Shift (9 AM – 2 PM) — ₹879/mo</option>
+<option data-bind="pages.contact.t09">Evening Shift (2 PM – 7 PM) — ₹879/mo</option>
+<option data-bind="pages.contact.t10" selected="">Full Day Access (9 AM – 7 PM) — ₹999/mo</option>
+</select>
+</div>
+<div class="form-group">
+<label class="form-label" data-bind="pages.contact.t11" for="startDate">Target Joining Date</label>
+<input class="form-input" id="startDate" name="startDate" type="date"/>
+</div>
+<div class="form-group">
+<label class="form-label" data-bind="pages.contact.t12" for="targetExam">Target Exam / Goal</label>
+<input class="form-input" id="targetExam" name="exam" placeholder="e.g. UPSC, NEET, Banking, Self-study" type="text"/>
+</div>
+<div class="form-group full-width">
+<label class="form-label" data-bind="pages.contact.t13" for="notes">Special Requirements / Notes</label>
+<textarea class="form-textarea" id="notes" name="notes" placeholder="Any specific preferences (e.g. corner desk, locker needed)?"></textarea>
+</div>
+</div>
+<div class="form-btn-row">
+<button class="btn btn-primary" data-bind="pages.contact.t14" type="submit">Submit Seat Request</button>
+</div>
+<div class="form-feedback" id="formFeedback" role="alert"></div>
+</form>
+</div>
+<!-- Right: Location, Hours & Visiting Guide -->
+<div class="contact-info-col">
+<div class="info-card">
+<h3 data-bind="pages.contact.t15">Library Location</h3>
+<div class="info-item">
+<div class="info-icon">
+<svg viewbox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+</div>
+<div class="info-meta">
+<span class="info-title" data-bind="pages.contact.t16">Physical Address</span>
+<span class="info-value" data-bind="business.address">
+              Circular Road, Opposite Civil Hospital, Faridkot, Punjab 151203
+            </span>
+</div>
+</div>
+<div class="info-item">
+<div class="info-icon">
+<svg viewbox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path></svg>
+</div>
+<div class="info-meta" data-bind="pages.contact.t17">
+<span class="info-title">Landmark &amp; Commute</span>
+<span class="info-value">
+              Located right across Civil Hospital on Circular Road. 5 minutes from the Bus Stand and Main Market. Parking available.
+            </span>
+</div>
+</div>
+</div>
+<div class="info-card">
+<h3 data-bind="pages.contact.t18">Hours &amp; Walk-Ins</h3>
+<div class="info-item">
+<div class="info-icon">
+<svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+</div>
+<div class="info-meta">
+<span class="info-title" data-bind="pages.contact.t19">Daily Operating Hours</span>
+<span class="info-value" data-bind="business.hours">
+              Open 7 Days a Week: 8:00 AM – 9:00 PM
+            </span>
+</div>
+</div>
+<div class="info-item">
+<div class="info-icon">
+<svg viewbox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+</div>
+<div class="info-meta" data-bind="pages.contact.t20">
+<span class="info-title">Walk-In Visitor Policy</span>
+<span class="info-value">
+              No prior appointment required. Walk directly into our reception desk anytime between 8 AM and 9 PM for a quick 5-minute hall tour and chair test.
+            </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+<div class="footer-top">
+<div class="footer-brand">
+<div class="brand">
+<span class="brand-mark" data-bind="business.shortName">SH</span>
+<span class="brand-name" data-bind="business.name">The Scholars Hub</span>
+</div>
+<p class="footer-desc" data-bind="business.tagline">Faridkot's quiet study space, built for exam preparation with uninterrupted power and climate-controlled peace.</p>
+</div>
+<div class="footer-col">
+<h4>Pages</h4>
+<ul class="footer-links">
+<li><a href="index.html">Home</a></li>
+<li><a data-bind="pages.contact.t21" href="about.html">About Us</a></li>
+<li><a data-bind="pages.contact.t22" href="services.html">Services &amp; Shifts</a></li>
+<li><a data-bind="pages.contact.t23" href="gallery.html">Photo Gallery</a></li>
+<li><a data-bind="pages.contact.t24" href="contact.html">Contact &amp; Visit</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Hours</h4>
+<div class="footer-contact-item" data-bind="business.hours">Open Daily: 8:00 AM – 9:00 PM</div>
+<div class="footer-contact-item" data-bind="pages.contact.t25">Morning Shift: 9 AM – 2 PM</div>
+<div class="footer-contact-item" data-bind="pages.contact.t26">Evening Shift: 2 PM – 7 PM</div>
+<div class="footer-contact-item" data-bind="pages.contact.t27">Full Access: 9 AM – 7 PM</div>
+</div>
+<div class="footer-col">
+<h4>Location</h4>
+<div class="footer-contact-item" data-bind="business.address">Circular Road, Opp. Civil Hospital, Faridkot, Punjab 151203</div>
+<div class="footer-contact-item"><a data-bind="business.phone" data-bind-href="business.phoneTel" href="tel:+917888901014">+91 <span data-bind="business.phoneDisplay">78889 01014</span></a></div>
+<div class="footer-contact-item"><a data-bind="pages.contact.t28" data-bind-href="business.whatsappLink" href="https://wa.me/917888901014" rel="noopener" target="_blank">Chat on WhatsApp →</a></div>
+</div>
+</div>
+<div class="footer-bottom">
+<span data-bind="business.copyright">The Scholars Hub, Faridkot — Punjab. All rights reserved.</span>
+<span class="siteai-badge">SiteAI Template Engine</span>
+</div>
+</footer>
+<script src="data/site-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
